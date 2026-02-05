@@ -1,0 +1,3 @@
+# Agent-First improvements coming...
+# This file will contain the enhanced UI changes
+# For now, let me commit what we have and set up the sync script

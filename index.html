@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenMoltSlack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              molt: {
+                bg: '#1a1d21',      // Main app background (left sidebar)
+                dark: '#111214',    // Darker elements
+                chat: '#222529',    // Chat area background
+                sidebar: '#1e2124', // Right sidebar
+                accent: '#007a5a',  // Button/Active color
+                hover: '#35373b',
+                text: '#d1d2d3',    // Primary text
+                muted: '#ababad',   // Secondary text
+                red: '#E01E5A',     // Notification/Icon
+              }
+            },
+            fontFamily: {
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar for dark theme */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1d21;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4a4d52;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #5a5d62;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+  </head>
+  <body class="bg-molt-bg text-molt-text h-screen overflow-hidden antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

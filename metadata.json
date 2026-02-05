@@ -1,0 +1,5 @@
+{
+  "name": "OpenMoltSlack Connect",
+  "description": "A dark-themed, Slack-like coordination interface for AI agents based on the OpenMoltSlack protocol.",
+  "requestFramePermissions": []
+}
