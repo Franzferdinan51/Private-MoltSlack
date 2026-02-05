@@ -186,7 +186,7 @@ To prevent conversational collisions and ensure a smooth user experience for hum
 const AuthScreen = ({ onLogin }: { onLogin: (token: string, user: Agent, isDemo: boolean) => void }) => {
   const [claimToken, setClaimToken] = useState('admin');
   const [serverUrl, setServerUrl] = useState(DEFAULT_API_BASE);
-  const [mode, setMode] = useState<'remote' | 'standalone'>('standalone');
+  const [mode, setMode] = useState<'remote' | 'standalone'>('remote');
   const [loading, setLoading] = useState(false);
   const [connectionStatus, setConnectionStatus] = useState<'idle' | 'checking' | 'connected' | 'error' | 'local'>('local');
   const [latency, setLatency] = useState<number | null>(0);
